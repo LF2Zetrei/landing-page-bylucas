@@ -7,7 +7,7 @@ function pseudoRand(seed) {
 
 export default function ParallelogramsSketch({
     width = '100%',
-    height = 200,
+    height = '100%',
     angle = 15,
     strokeColor = '#111',
     strokeWidth = 2.2,
@@ -15,7 +15,7 @@ export default function ParallelogramsSketch({
     strokeCount = 2,
     angleVariation = 1,
     offsetVariation = 4,
-    strokes,
+    strokes = undefined,
     contentPosition = 'above',
     children
 }) {

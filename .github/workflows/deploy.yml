@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    uses: LF2Zetrei/infra-github-actions/.github/workflows/reusable-deploy.yml@main
+    with:
+      project_name: landing
+      project_type: static
+      remote_path: /var/www/landing
+    secrets:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}

@@ -38,7 +38,7 @@ export default function Home() {
             >
                 <div className="h-full w-full flex items-center justify-center gap-6">
                     <Link
-                      href="https://portfolio.bylucas.eu"
+                      href="https://monitor.bylucas.eu"
                       className="font-(family-name:--font-baloo) text-7xl font-bold text-black inline-block hover:scale-110 transition-transform"
                     >
                       Monitoring
